@@ -26,7 +26,8 @@ export default function scene(props) {
   React.useEffect(() => {
     const transitionsData = sceneTransitions1.transitions(props.isPortrait);
     const transitionElements = getTransitionElements(transitionsData);
-
+    // console.log("transitionsData", transitionsData);
+    // console.log("transitionElements", transitionElements);
     const observer = new IntersectionObserver(
       onTick.bind(null, transitionsData, transitionElements),
       {
