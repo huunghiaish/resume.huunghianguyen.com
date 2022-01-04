@@ -20,8 +20,9 @@ export default {
   transitions: (isPortrait) => {
     const deskView = 10;
     const meView = [400, 800]; // khoảng thời gian view này xuất hiện?
-    const freelanceView = [800, 1200];
-    const companyView = [1200, 1600];
+    const classroomView = [1200, 1600];
+    // const freelanceView = [800, 1200];
+    // const companyView = [1200, 1600];
     const founderView = [1600, 1800];
     const frameView = [1800, 2500];
     const lightsOffView = [4300, 6300];
@@ -53,6 +54,10 @@ export default {
     const freelance = isPortrait
       ? multiple(translate(-980, -200), scale(2))
       : multiple(translate(-500, -200), scale(1.5));
+
+    const classroom = isPortrait
+      ? multiple(translate(-800, 450), scale(1.7))
+      : multiple(translate(-250, -230), scale(1));
 
     const company = isPortrait
       ? multiple(translate(-800, 450), scale(1.7))
@@ -89,14 +94,18 @@ export default {
         "education",
         {
           0: {
-            transform: start,
+            transform: classroom,
           },
           2: {
-            transform: start,
+            transform: classroom,
             opacity: 0,
           },
           [meView[0] - 50]: {
             transform: start,
+            opacity: 1,
+          },
+          [classroomView[0]]: {
+            transform: classroom,
             opacity: 1,
           },
         },
@@ -110,7 +119,7 @@ export default {
           [deskView + 430]: {
             strokeDashoffset: 0,
           },
-          // ...disappearAt(freelanceView[0]),
+          // ...disappearAt(deskView + 450),
         },
       ],
       [
