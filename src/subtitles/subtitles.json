@@ -1,88 +1,32 @@
 [
   {
     "start": "400",
-    "end": "700",
+    "end": "600",
     "text": "My name is Nguyễn Hữu Nghĩa"
   },
   {
-    "start": "700",
-    "end": "900",
-    "text": "I'm a self-taught web engineer"
+    "start": "600",
+    "end": "800",
+    "text": "Tôi bắt đầu biết đến lập trình khi học THPT với ngôn ngữ đầu tiên là pascal"
+  },
+  {
+    "start": "800",
+    "end": "1000",
+    "text": "Từ đó tôi bắt đầu có hứng thú và bắt đầu mục tiêu đỗ đại học và học nghành công nghệ thông tin"
   },
   {
     "start": "1000",
     "end": "1200",
-    "text": "I've been a freelancer,"
+    "text": "2016, tôi đỗ đh và bắt đầu học tại trường ĐHKHTN"
   },
   {
     "start": "1200",
     "end": "1400",
-    "text": "an employee,"
+    "text": "Học tập trao dồi kiến thức nền tảng và kỹ năng mềm,..."
   },
   {
     "start": "1600",
     "end": "1800",
-    "text": "and an entrepreneur."
-  },
-  {
-    "start": "2000",
-    "end": "2300",
-    "text": "In 2014 I left Rome and moved to London"
-  },
-  {
-    "start": "2400",
-    "end": "2500",
-    "text": "(with a plane actually)"
-  },
-  {
-    "start": "2600",
-    "end": "2800",
-    "text": "best adventure of my life 🤗"
-  },
-  {
-    "start": "2900",
-    "end": "3300",
-    "text": "I've met amazing engineers that made me a much better developer"
-  },
-  {
-    "start": "3400",
-    "end": "3700",
-    "text": "In 2018 I joined ASOS as a senior software engineer. What a ride!"
-  },
-  {
-    "start": "3800",
-    "end": "4000",
-    "text": "And not just work, a few things happened in my personal life as well 👨‍👩‍👧😊"
-  },
-
-  {
-    "start": "4500",
-    "end": "4700",
-    "text": "When I can I like to contribute to the community"
-  },
-  {
-    "start": "4800",
-    "end": "5100",
-    "text": "publishing code on my github profile"
-  },
-  {
-    "start": "5100",
-    "end": "5400",
-    "text": "writing about software engineering"
-  },
-  {
-    "start": "5400",
-    "end": "5700",
-    "text": "or contributing to other open source projects"
-  },
-  {
-    "start": "5700",
-    "end": "6000",
-    "text": "But the most important thing of all,"
-  },
-  {
-    "start": "6001",
-    "end": "6003",
-    "text": "dskf sdkjf98sy d9f8u"
+    "text": "sau 4 năm đại học tôi tốt nghiệp, và bắt đầu tìm cơ hội việc làm cho mình"
   }
 ]

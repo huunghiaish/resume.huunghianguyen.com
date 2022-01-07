@@ -38,7 +38,7 @@ export default (transitionsData, transitionElements) => {
   }
 
   const styles = calculateStyles(currentFrame, transitionsData);
-  console.log("styles", styles);
+  // console.log("styles", styles);
   styles.forEach(({ selector, style }) => {
     transitionElements.get(selector).forEach((element) => {
       element.setAttribute("style", style);

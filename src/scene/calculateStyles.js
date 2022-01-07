@@ -38,15 +38,15 @@ const calculateStyles = (_currentFrame, transitions) => {
     }
 
     transitionEntries.forEach(([thisFrame, currentValue], index, arr) => {
-      console.log("entity", thisFrame, currentValue, _currentFrame);
+      // console.log("entity", thisFrame, currentValue, _currentFrame);
       const correctedFrame = getFrame(_currentFrame, arr);
-      console.log("correctedFrame", correctedFrame);
+      // console.log("correctedFrame", correctedFrame);
       const nextKeyframe = arr[index + 1] && parseInt(arr[index + 1][0], 10);
-      console.log("nextKeyframe", nextKeyframe);
+      // console.log("nextKeyframe", nextKeyframe);
       if (shouldUpdate(correctedFrame, parseInt(thisFrame, 10), nextKeyframe)) {
         const progress =
           (correctedFrame - thisFrame) / (nextKeyframe - thisFrame);
-        console.log("progress", progress);
+        // console.log("progress", progress);
         const nextValue = arr[index + 1][1];
         const interpolation = interpolateObject(currentValue, nextValue);
         const interpolatedProgress = interpolation(progress);

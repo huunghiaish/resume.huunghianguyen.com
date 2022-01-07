@@ -21,9 +21,10 @@ export default {
     const deskView = 10;
     const meView = [400, 800]; // khoảng thời gian view này xuất hiện?
     const classroomView = [1200, 1600];
+    const graduationView = [1600, 1800];
     // const freelanceView = [800, 1200];
     // const companyView = [1200, 1600];
-    const founderView = [1600, 1800];
+    // const founderView = [1600, 1800];
     const frameView = [1800, 2500];
     const lightsOffView = [4300, 6300];
     const contactsView = [6100, 8400];
@@ -58,6 +59,10 @@ export default {
     const classroom = isPortrait
       ? multiple(translate(-800, 450), scale(1.7))
       : multiple(translate(-250, -230), scale(1));
+
+    const graduation = isPortrait
+      ? multiple(translate(-800, 450), scale(1.7))
+      : multiple(translate(-730, -180), scale(1.7, 1.7));
 
     const company = isPortrait
       ? multiple(translate(-800, 450), scale(1.7))
@@ -108,6 +113,10 @@ export default {
             transform: classroom,
             opacity: 1,
           },
+          [classroomView[1]]: {
+            transform: classroom,
+            opacity: 0,
+          },
         },
       ],
       [
@@ -125,12 +134,9 @@ export default {
       [
         "graduation",
         {
-          0: {
-            transform: start,
-          },
-          2: {
-            transform: start,
-            opacity: 0,
+          ...appearAt(graduationView[0] - 1),
+          [graduationView[0]]: {
+            transform: graduation,
           },
         },
       ],
