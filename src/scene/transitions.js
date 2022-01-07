@@ -25,7 +25,7 @@ export default {
     // const freelanceView = [800, 1200];
     // const companyView = [1200, 1600];
     // const founderView = [1600, 1800];
-    const frameView = [1800, 2500];
+    const frameView = [2000, 2500];
     const lightsOffView = [4300, 6300];
     const contactsView = [6100, 8400];
     const frameZoomed = isPortrait
@@ -59,6 +59,14 @@ export default {
     const classroom = isPortrait
       ? multiple(translate(-800, 450), scale(1.7))
       : multiple(translate(-250, -230), scale(1));
+
+    const graduationMin = isPortrait
+      ? multiple(translate(-800, 450), scale(1.7))
+      : multiple(translate(-3400, -220), scale(5, 5));
+
+    const graduationMedium = isPortrait
+      ? multiple(translate(-800, 450), scale(1.7))
+      : multiple(translate(-1850, -125), scale(3, 3));
 
     const graduation = isPortrait
       ? multiple(translate(-800, 450), scale(1.7))
@@ -136,6 +144,12 @@ export default {
         {
           ...appearAt(graduationView[0] - 1),
           [graduationView[0]]: {
+            transform: graduationMin,
+          },
+          [graduationView[0] + 100]: {
+            transform: graduationMedium,
+          },
+          [graduationView[0] + 300]: {
             transform: graduation,
           },
         },
