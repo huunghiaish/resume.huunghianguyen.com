@@ -11,6 +11,7 @@ import {
   scale,
   smokeMachine,
   translate,
+  animationDriving,
 } from "./transition-utilities";
 
 const duration = 8200;
@@ -21,11 +22,14 @@ export default {
     const deskView = 10;
     const meView = [400, 800]; // khoảng thời gian view này xuất hiện?
     const classroomView = [1200, 1600];
-    const graduationView = [1600, 1800];
+    const graduationView = [1600, 2500]; // +900
+    const roadForWorkView = [2500, 4500];
+    const motobikeView = [2500, 4500];
+    // motobike translate +50
     // const freelanceView = [800, 1200];
     // const companyView = [1200, 1600];
     // const founderView = [1600, 1800];
-    const frameView = [2000, 2500];
+    const frameView = [3500, 3800]; // need update
     const lightsOffView = [4300, 6300];
     const contactsView = [6100, 8400];
     const frameZoomed = isPortrait
@@ -60,6 +64,10 @@ export default {
       ? multiple(translate(-800, 450), scale(1.7))
       : multiple(translate(-250, -230), scale(1));
 
+    const window = isPortrait
+      ? multiple(translate(-800, 450), scale(1.7))
+      : multiple(translate(-5120, -300), scale(7, 7));
+
     const graduationMin = isPortrait
       ? multiple(translate(-800, 450), scale(1.7))
       : multiple(translate(-3400, -220), scale(5, 5));
@@ -71,6 +79,14 @@ export default {
     const graduation = isPortrait
       ? multiple(translate(-800, 450), scale(1.7))
       : multiple(translate(-730, -180), scale(1.7, 1.7));
+
+    const roadForWork = isPortrait
+      ? multiple(translate(-800, 450), scale(1.7))
+      : multiple(translate(570, 20), scale(0.3, 0.3));
+
+    const motobike = isPortrait
+      ? multiple(translate(-800, 450), scale(1.7))
+      : multiple(translate(-700, 0), scale(1));
 
     const company = isPortrait
       ? multiple(translate(-800, 450), scale(1.7))
@@ -144,14 +160,41 @@ export default {
         {
           ...appearAt(graduationView[0] - 1),
           [graduationView[0]]: {
-            transform: graduationMin,
+            transform: window,
+            opacity: 1,
           },
           [graduationView[0] + 100]: {
-            transform: graduationMedium,
+            transform: graduationMin,
+            opacity: 1,
           },
           [graduationView[0] + 300]: {
-            transform: graduation,
+            transform: graduationMedium,
+            opacity: 1,
           },
+          [graduationView[0] + 500]: {
+            transform: graduation,
+            opacity: 1,
+          },
+          [graduationView[1]]: {
+            transform: graduation,
+            opacity: 0,
+          },
+        },
+      ],
+      [
+        "roadforwork",
+        {
+          ...appearAt(roadForWorkView[0]),
+          [roadForWorkView[0] + 1]: {
+            transform: roadForWork,
+          },
+        },
+      ],
+      [
+        "motobike",
+        {
+          ...appearAt(motobikeView[0]),
+          ...animationDriving(motobikeView[0], motobikeView[1]),
         },
       ],
       [

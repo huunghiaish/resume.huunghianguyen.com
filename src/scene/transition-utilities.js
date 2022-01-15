@@ -167,6 +167,18 @@ export const getTransitionElements = (transitions) => {
   return map;
 };
 
+export const animationDriving = (start, end) => {
+  const output = {};
+
+  for (let index = 0, time = start; time < end; index += 80, time += 20) {
+    output[time] = {
+      transform: translate(index, `${(Math.random() * 50).toFixed(2) - 40}`),
+    };
+  }
+
+  return output;
+};
+
 export const browser = ((agent) => {
   switch (true) {
     case agent.indexOf("edge") > -1:
