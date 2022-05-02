@@ -199,6 +199,13 @@ export default {
         },
       ],
       [
+        "messageContactMe",
+        {
+          ...appearAt(motobikeView[0]),
+          ...animationDriving(motobikeView[0], motobikeView[1]),
+        },
+      ],
+      [
         "container",
         {
           0: {

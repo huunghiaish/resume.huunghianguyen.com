@@ -80,6 +80,13 @@ body {
     cursor: pointer;
   }
 
+  #btnMessageContact {
+    cursor: pointer;
+  }
+  #btnMessageContact:hover {
+    fill: blueviolet;
+  }
+
   #framemasked {
     clip-path: inherit;
   }

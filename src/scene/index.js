@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from "react";
 import Svg from "./scene.svg";
 import sceneTransitions1 from "./transitions";
@@ -45,14 +46,11 @@ export default function scene(props) {
   });
 
   React.useEffect(() => {
-    document.querySelector("#contactsbutton").addEventListener("click", () => {
-      window.open("https://www.linkedin.com/in/albinotonnina/");
-    });
-  });
-  React.useEffect(() => {
-    document.querySelector("#githubbutton").addEventListener("click", () => {
-      window.open("https://github.com/albinotonnina/albinotonnina.com/");
-    });
+    document
+      .querySelector("#messageContactMe")
+      .addEventListener("click", () => {
+        window.open("https://www.linkedin.com/in/nghianguyenhuu98/");
+      });
   });
 
   return <Svg width={props.width} height={props.height} />;
