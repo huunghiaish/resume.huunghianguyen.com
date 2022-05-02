@@ -2,31 +2,41 @@
   {
     "start": "400",
     "end": "600",
-    "text": "My name is Nguyễn Hữu Nghĩa"
+    "text": "My name is Nguyễn Hữu Nghĩa (Leo Nguyen)."
   },
   {
     "start": "600",
     "end": "800",
-    "text": "Tôi bắt đầu biết đến lập trình khi học THPT với ngôn ngữ đầu tiên là pascal"
+    "text": "I started knowing programming when I was in high school with my first language being pascal."
   },
   {
     "start": "800",
     "end": "1000",
-    "text": "Từ đó tôi bắt đầu có hứng thú và bắt đầu mục tiêu đỗ đại học và học nghành công nghệ thông tin"
+    "text": "From there, I started liking it and set a goal to go to university and study information technology."
   },
   {
     "start": "1000",
     "end": "1200",
-    "text": "2016, tôi đỗ đh và bắt đầu học tại trường ĐHKHTN"
+    "text": "In 2016, I passed the university entrance exam and started attending the University of Science and Technology of Ho Chi Minh City."
   },
   {
     "start": "1200",
     "end": "1400",
-    "text": "Học tập trao dồi kiến thức nền tảng và kỹ năng mềm,..."
+    "text": "Learning to improve foundational knowledge and soft skills,..."
   },
   {
     "start": "1600",
-    "end": "1800",
-    "text": "sau 4 năm đại học tôi tốt nghiệp, và bắt đầu tìm cơ hội việc làm cho mình"
+    "end": "2000",
+    "text": "After 4 years of university I graduated and started looking for job opportunities for myself."
+  },
+  {
+    "start": "2500",
+    "end": "2800",
+    "text": "Currently, I'm a full-time software engineer and part-time freelancer"
+  },
+  {
+    "start": "2800",
+    "end": "3500",
+    "text": "If you need to make a software or a website. I am very pleased to cooperate with you!"
   }
 ]
