@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import {
   animateSourceCodes,
   appearAt,
@@ -14,7 +15,7 @@ import {
   animationDriving,
 } from "./transition-utilities";
 
-const duration = 8200;
+const duration = 4500; // tổng thời gian trình chiếu (view[1] end)
 
 export default {
   duration,
@@ -24,7 +25,7 @@ export default {
     const classroomView = [1200, 1600];
     const graduationView = [1600, 2500]; // +900
     const roadForWorkView = [2500, 4500];
-    const motobikeView = [2500, 4500];
+    const motobikeView = [2500, 3600]; // stop motobikeView[1]
     // motobike translate +50
     // const freelanceView = [800, 1200];
     // const companyView = [1200, 1600];
@@ -427,30 +428,34 @@ export default {
         "room",
         {
           ...appearAt(frameView[0] - 2),
-          [frameView[0] - 1]: {
-            transform: frameZoomed,
-          },
-          [frameView[0] + 1]: {
-            transform: frameZoomed,
-          },
-          [frameView[1]]: {
-            transform: frameZoomed,
-          },
-          [frameView[1] + 400]: {
+          [frameView[0]]: {
+            opacity: 0,
             transform: frame,
           },
-          [frameView[1] + 1000]: {
-            transform: lanyard,
-          },
-          [frameView[1] + 1600]: {
-            transform: total,
-          },
-          [lightsOffView[0] + 400]: {
-            transform: total,
-          },
-          [lightsOffView[0] + 600]: {
-            transform: table,
-          },
+          // [frameView[0] - 1]: {
+          //   transform: frameZoomed,
+          // },
+          // [frameView[0] + 1]: {
+          //   transform: frameZoomed,
+          // },
+          // [frameView[1]]: {
+          //   transform: frameZoomed,
+          // },
+          // [frameView[1] + 400]: {
+          //   transform: frame,
+          // },
+          // [frameView[1] + 1000]: {
+          //   transform: lanyard,
+          // },
+          // [frameView[1] + 1600]: {
+          //   transform: total,
+          // },
+          // [lightsOffView[0] + 400]: {
+          //   transform: total,
+          // },
+          // [lightsOffView[0] + 600]: {
+          //   transform: table,
+          // },
         },
       ],
 

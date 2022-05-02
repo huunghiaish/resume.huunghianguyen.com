@@ -39,7 +39,7 @@ export default (_, { analyze }) => {
       }),
       new HtmlWebpackPlugin({ template: "./src/index.html" }),
       new StringReplacePlugin(),
-      new FaviconsWebpackPlugin("./src/images/logo.png"),
+      new FaviconsWebpackPlugin("./src/images/logo-trans.png"),
     ],
     optimization: {
       minimize: true,
