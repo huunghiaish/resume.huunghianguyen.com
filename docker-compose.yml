@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   portofio:
-    container_name: portofio
+    # container_name: portofio
     image: nguyenhuunghia/portofio
     ports:
       - 8080:80
