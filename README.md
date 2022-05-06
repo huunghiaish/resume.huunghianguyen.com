@@ -21,5 +21,7 @@
 
 - production from docker hub:
   `docker run -it --rm -d -p 8080:80 nguyenhuunghia/portofio`
+- docker-compose:
+  `docker-compose -p stack-nghia up -d`
 
 ## refer source albinotonnina.com
