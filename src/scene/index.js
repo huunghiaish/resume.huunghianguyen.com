@@ -49,7 +49,7 @@ export default function scene(props) {
     document
       .querySelector("#messageContactMe")
       .addEventListener("click", () => {
-        window.open("https://www.linkedin.com/in/nghianguyenhuu98/");
+        window.open("https://www.linkedin.com/in/huunghianguyen/");
       });
   });
 
